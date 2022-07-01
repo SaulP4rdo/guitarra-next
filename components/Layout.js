@@ -1,21 +1,21 @@
-import Head from "next/head"
-import Footer from "./Footer"
-import Header from "./Header"
+import Head from "next/head";
+import Footer from "./Footer";
+import Header from "./Header";
 
 const Layout = ({ children, pagina }) => {
-    return (
-        <div>
-            <Head>
-                <title>GuitarLa - {pagina}</title>
-                <meta name="descripcion" content="Sitio web de guitarras " />
-            </Head>
+  return (
+    <div>
+      <Head>
+        <title>GuitarLa - {pagina}</title>
+        <meta name="descripcion" content="Sitio web de guitarras " />
+      </Head>
 
-            <Header />
-            {children}
+      <Header />
+      {children}
 
-            <Footer />
-        </div>
-    )
-}
+      <Footer />
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;
