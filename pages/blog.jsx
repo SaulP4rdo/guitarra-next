@@ -4,8 +4,9 @@ import ListadoBlog from "../components/ListadoBlog";
 const Blog = ({ entradas }) => {
   return (
     <Layout pagina="Blog">
-      <main className="contenedor"></main>
-      <ListadoBlog entradas={entradas} />
+      <main className="contenedor">
+        <ListadoBlog entradas={entradas} />
+      </main>
     </Layout>
   );
 };
