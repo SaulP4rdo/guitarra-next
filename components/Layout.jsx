@@ -9,13 +9,6 @@ const Layout = ({ children, pagina, guitarra }) => {
         <title>GuitarLa - {pagina}</title>
 
         <meta name="descripcion" content="Sitio web de guitarras " />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <Header guitarra={guitarra} />
