@@ -3,7 +3,7 @@ import Image from "next/image";
 import Layout from "../../components/Layout";
 import styles from "../../styles/Guitarra.module.css";
 
-const producto = ({ guitarra, agregarCarrito }) => {
+const Producto = ({ guitarra, agregarCarrito }) => {
   const [cantidad, setCantidad] = useState(1);
   const { descripcion, imagen, nombre, precio, id } = guitarra[0];
 
@@ -76,4 +76,4 @@ export async function getServerSideProps({ query: { url } }) {
   };
 }
 
-export default producto;
+export default Producto;
